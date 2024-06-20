@@ -1,0 +1,4 @@
+1. Work more on mapping
+2. Know more about onChange
+3. Why didn't tasks work without the useState
+4. Why there was empty strings added in the starting and why was the pushing delayed..

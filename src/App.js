@@ -5,7 +5,7 @@ import { TaskContext } from './Context';
 
 function App() {
 
-const [tasks,setTasks] = useState([])
+const [tasks,setTasks] = useState([]);
 const [task,setTask]=useState("");
 const [message,setMessage] = useState("");
 
@@ -13,12 +13,14 @@ function handleTaskAddition(){
   if(!task){
     setMessage("Enter any task");
   }else{
-  tasks.push(task);
+  // tasks.push(task);
+  setTasks(prev => [...prev,task]);
   setTask("")
   setMessage("")
   console.log(tasks)
 }
 }
+
 
   return (
     <TaskContext.Provider value={tasks}>
